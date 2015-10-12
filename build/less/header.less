@@ -1,0 +1,132 @@
+.header {
+	background: url(../img/bg-header.jpg) top center repeat-x;
+	.nav-social,
+	.nav-login {
+		display: inline-block;
+		vertical-align: middle;
+		list-style-type: none;
+		margin-bottom: 0;
+	}
+	.nav-menu {
+		display: table;
+		margin: 40px auto 0px;
+		list-style-type: none;
+		padding-left: 0;
+		li {
+			display: inline-block;
+			text-transform: uppercase;
+			vertical-align: middle;
+
+			&:after {
+				content: '|';
+				margin: -5px 10px 0;
+				vertical-align: middle;
+				display: inline-block;
+			}
+			&:last-child {
+				&:after {
+					content: none;
+				}
+			}
+			a {
+				font-size: 17px;
+				color: #333;
+				.gl;
+			}
+		}
+	}
+	&-lvl-1 {
+		padding: 20px 0;
+	}
+	&-lvl-2 {
+		padding-bottom: 30px;
+	}
+	.my-flex {
+		display: flex;
+	}
+	.form{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		
+		form {
+			flex-grow: 1;
+			padding:0 5px;
+			input {
+				width: 100%;
+				border: 1px solid #acacac;
+				text-align: center;
+				.ptsb;
+				transform: skewX(-25deg);
+				padding: 5px;
+
+				height: 35px;
+				background: rgba(255,255,255,.8);
+			}
+		}
+	}
+	.logo {
+		img {
+			margin-top: -20px;
+			margin-bottom: -20px;
+		}
+	}
+	.btn {
+		font-size: 15px;
+		.ptsb;
+		text-align: center;
+		border-radius: 0;
+		border:none;
+		transform: skewX(-25deg);
+		padding: 5px 15px;
+		margin:0 5px;
+		height: 35px;
+		color: #fff;
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			transform: skewX(25deg);
+			margin: 0 3px;
+			img {
+				margin-top: -4px;
+			}
+		}
+		&.grey {
+			background: #c2c2c2;
+		}
+		&.white-blue {
+			background: #4cc3ef;
+		}
+		&.dark-grey {
+			background: #505050;
+		}
+	}
+	.nav-social {
+		li {
+			display: inline-block;
+			margin: 0 5px;
+		}
+	}
+	.nav-login {
+		li {
+			display: inline-block;
+			text-transform: uppercase;
+			vertical-align: middle;
+			&:after {
+				content: '|';
+				margin: -3px 10px 0;
+				vertical-align: middle;
+				display: inline-block;
+			}
+			&:last-child {
+				&:after {
+					content: none;
+				}
+			}
+			a {
+				font-size: 13px;
+				color: #333;
+			}
+		}
+	}
+}
