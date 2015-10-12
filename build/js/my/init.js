@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var owlMain = function(number,target) {
+	var owlMain = function(number,target,offset) {
 		var owl = $(target);
 		owl.owlCarousel({
 			loop:true,
@@ -7,6 +7,7 @@ $(document).ready(function() {
 			nav:true,
 			dots:false,
 			items:number,
+			margin: offset, 
 			autoplay:false,
 			navText: [
 				"<i class='my-arrow-left'></i>",
@@ -15,7 +16,7 @@ $(document).ready(function() {
 			dots: true,
 		});
 	}
-	owlMain(1,'[data-item="owl-main"]');
-	owlMain(5,'[data-item="owl-main-card"]');
+	owlMain(1,'[data-item="owl-main"]', 0);
+	owlMain(5,'[data-item="owl-main-card"]', 20);
 });
 

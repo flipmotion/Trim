@@ -237,6 +237,252 @@
 			}
 		}
 	}
+	.price {
+		.gl;
+		font-size: 46px;
+		color:@lightblue;
+	}
+	.action {
+		display: flex;
+		p {
+			.ptsb;
+			font-size: 16px;
+			margin-right: 40px;
+			span {
+				.ptsr;
+			}
+		}
+		.bi {
+			.ptsbi;
+		}
+	}
+	.reviews {
+		.ptsi;
+		span {
+			color:@lightblue;
+		}
+	}
+	.item-social {
+		display: flex;
+		justify-content: space-between;
+		p {
+			font-size: 16px;
+		}
+		ul {
+			li {
+				display: inline-block;
+				margin-left: 12px;
+			}
+		}
+	}
+	.gallery-subtitle {
+		.ptsr;
+		font-size: 16px;
+		span {
+			color:@blue;
+			.ptsb;
+		}
+	}
+	.card-btns {
+		padding: 20px 0 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		p {
+			font-size: 22px;
+		}
+		select {
+			height: 50px;
+			.ptsb;
+			font-size: 22px;
+			border: 1px solid @blue;
+			padding: 10px 34px 10px 15px;
+			-webkit-appearance: none;
+   			-moz-appearance:    none;
+   			appearance:         none;
+   			background: url(../img/arrow-bottom.png) no-repeat center right 16px;
+		}
+		.btn-primary {
+			padding: 10px 35px;
+			height: 50px;
+			.ptsb;
+			font-size: 22px;
+			border:none;
+			margin: 0;
+			border-radius: 0;
+			outline:none;
+			background-color: @blue;
+
+		}
+		.gray {
+			background-color: #a6a6a6;
+		}
+	}
+	.btn-tabs {
+		width: 100%;
+		border:none;
+		margin: 0;
+		padding: 23px 0 25px;
+		border-radius: 0;
+		background-color: #fff;
+		border-top: 1px solid #e5e5e5;
+		outline:none;
+		.ptsr;
+		font-size: 27px;
+		display: flex;
+		justify-content:space-between;
+		&:hover,&:active {
+			background-color:#fff;
+			border-top: 1px solid #e5e5e5;
+			outline: none;
+			box-shadow: none;
+		}
+		.on{
+			display: none;
+		}
+		.off {
+			display: block;
+		}
+		&.collapsed {
+			.off {
+				display: none;
+			}
+			.on{
+				display: block;
+			}
+		}
+	}
+	.item-detail {
+		ul {
+			margin: 0 0 30px 0;
+			padding: 0;
+			li {
+				margin: 0;
+				p {
+					margin: 0 0 6px 0;
+					font-size: 14px;
+					.ptsr;
+					strong {
+						font-size: 15px;
+					}
+				}
+				.bi {
+					.ptsbi;
+				}
+			}
+		}
+	}
+	.rating {
+		margin-bottom: 20px;
+		&.one-of-5 {
+			&>div {
+				&:nth-child(1) {
+					background-image: url(../img/rating-on.png); 
+				}
+			}
+		}
+		&.two-of-5 {
+			&>div {
+				&:nth-child(1) {
+					background-image: url(../img/rating-on.png); 
+				}
+				&:nth-child(2) {
+					background-image: url(../img/rating-on.png); 
+				}
+			}
+		}
+		&.three-of-5 {
+			&>div {
+				&:nth-child(1) {
+					background-image: url(../img/rating-on.png); 
+				}
+				&:nth-child(2) {
+					background-image: url(../img/rating-on.png); 
+				}
+				&:nth-child(3) {
+					background-image: url(../img/rating-on.png); 
+				}
+			}
+		}
+		&.four-of-5 {
+			&>div {
+				&:nth-child(1) {
+					background-image: url(../img/rating-on.png); 
+				}
+				&:nth-child(2) {
+					background-image: url(../img/rating-on.png); 
+				}
+				&:nth-child(3) {
+					background-image: url(../img/rating-on.png); 
+				}
+				&:nth-child(4) {
+					background-image: url(../img/rating-on.png); 
+				}
+
+			}
+		}
+		&.five-of-5 {
+			&>div {
+				&:nth-child(1) {
+					background-image: url(../img/rating-on.png); 
+				}
+				&:nth-child(2) {
+					background-image: url(../img/rating-on.png); 
+				}
+				&:nth-child(3) {
+					background-image: url(../img/rating-on.png); 
+				}
+				&:nth-child(4) {
+					background-image: url(../img/rating-on.png); 
+				}
+				&:nth-child(5) {
+					background-image: url(../img/rating-on.png); 
+				}
+			}
+		}
+		&>div {
+			width: 22px;
+			height: 22px;
+			background: url(../img/rating-off.png) center center no-repeat;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 2px;
+		}
+	}
+	.owl-main-card {
+		padding: 0 20px;
+		border-left: 1px solid #d0d0d0;
+		border-right: 1px solid #d0d0d0;
+		.item {
+			border: 1px solid #d0d0d0;
+			margin-top:0;
+			margin: 0 1px;
+			&.active {
+				border-color: @blue;
+			}
+		}
+		.my-arrow-left {
+			position: absolute;
+			top: 50%;
+			left: -10px;
+			margin-top: -11px;
+			width: 16px;
+			height: 22px;
+			background: url(../img/navi-2.png) #fff right center no-repeat;
+			z-index: 1;
+		}
+		.my-arrow-right {
+			position: absolute;
+			top: 50%;
+			right: -10px;
+			margin-top: -11px;
+			width: 16px;
+			height: 22px;
+			
+			background: url(../img/navi-2.png) #fff left center no-repeat;
+			z-index: 1;
+		}
+	}
 	/*CARD item END*/
 	/*home*/
 	.main-banner {
