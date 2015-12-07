@@ -1,11 +1,25 @@
 .header {
 	background: url(../img/bg-header.jpg) top center repeat-x;
+	transition: @transition;
 	.nav-social,
 	.nav-login {
 		display: inline-block;
 		vertical-align: middle;
 		list-style-type: none;
 		margin-bottom: 0;
+	}
+	&-mob {
+		.navbar-toggle {
+			border-color: #333;
+			margin-right: 0;
+			margin-top: 10px;
+			.icon-bar {
+				background: #333;
+			}
+		}
+		.my-flex {
+			display: flex !important;
+		}
 	}
 	.nav-menu {
 		display: table;
@@ -42,7 +56,7 @@
 		padding-bottom: 30px;
 	}
 	.my-flex {
-		display: flex;
+		display: flex !important;
 	}
 	.form{
 		width: 100%;

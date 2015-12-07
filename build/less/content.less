@@ -1,3 +1,29 @@
+.nav-active {
+	//transform: translateX(-320px);
+	body {
+		
+		right: 300px;
+	}
+	.offcanvas{
+		right: 0;
+	}
+	.close-nav {
+		position: fixed;
+		top:0;
+		width: 100%;
+		right: 0;
+		bottom: 0;
+		bottom:0;
+		background: rgba(0,0,0,.3);
+		z-index: 9;
+	}
+}
+body {
+	transition: @transition;
+	right: 0;
+	position: relative;
+}
+
 .content {
 	/*category_1*/
 	ul {
@@ -605,6 +631,9 @@
 		}
 		tr {
 			border-bottom: 1px solid #cccccc;
+			display: flex;
+			justify-content:space-between;
+			align-items:center;
 			&:first-child {
 				p {
 					font-size: 16px;

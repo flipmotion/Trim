@@ -16,10 +16,139 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body >
+<body>
+	<div class="close-nav"></div>
+	<offcanvas class="offcanvas" data-item="offcanvas">
+		<div class="offcanvas-header">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<div class="my-flex">
+						<div>
+							<button class="btn offcanvas-btn" data-item="offcanvas-menu">
+								<i class="glyphicon glyphicon-menu-right"></i>
+							</button>
+						</div>
+						<div>
+							<h3>Menu</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas-body">
+			<div class="viewport-menu">
+				<div class="offcanvas-body-item">
+					<a href="#">PRODUCT SALES</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Production Services</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Installation Services</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Project Gallery</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">CONTACT US</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">About</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Contractor</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Account</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Locations</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Log In</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">NEW ACCOUNT</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">My CART ( <span>0</span> )</a>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas-footer">
+			<div class="offcanvas-footer-lvl-1">
+				<div class="row">
+					<div class="col-xs-6 col-md-6 col-sm-6">
+						<button class="btn btn-primary white-blue"><span>Log In</span></button>
+					</div>
+					<div class="col-xs-6 col-md-6 col-sm-6">
+						<button class="btn btn-primary white-blue"><span>NEW ACCOUNT</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<form action="">
+						<div class="row">
+							<div class="col-xs-6 col-md-6 col-sm-6">
+								<input type="search" placeholder="Type to Search">
+							</div>
+							<div class="col-xs-6 col-md-6 col-sm-6">
+								<button type="submit" class="btn btn-primary white-blue"><img src="assets/img/head-search.png" alt=""><span>Search</span></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<hr class="line" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<button class="btn btn-primary white-blue"><span>DISTRIBUTOR LOGIN</span></button>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<hr class="line" />
+				</div>
+			</div>
+			<div class="offcanvas-footer-lvl-2">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="social">
+							<div><a href="#" class="icon fb"><img src="assets/img/social-f.png" alt=""></a></div>
+							<div><a href="#" class="icon tw"><img src="assets/img/social-i.png" alt=""></a></div>
+							<div><a href="#" class="icon in"><img src="assets/img/social-t.png" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</offcanvas>
 	<div class="sticky-page">
 		<section class="header">
-			<div class="header-lvl-1">
+			<div class="header-mob visible-xs">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="logo"><img src="assets/img/logo.png" alt=""></div>
+						</div>
+						<div class="col-xs-6 text-right">
+							<button type="button" class="navbar-toggle collapsed" data-item="offcanvas-menu">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-lvl-1 hidden-xs">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 text-right">
@@ -38,7 +167,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header-lvl-2">
+			<div class="header-lvl-2 hidden-xs">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
@@ -90,7 +219,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<table class="full-width trash-table">
+						<table class="full-width trash-table hidden-xs">
 							<tr>
 								<td width="80"><p class="text-center">ITEM</p></td>
 								<td></td>
@@ -144,6 +273,97 @@
 								</td>
 							</tr>
 						</table>
+
+
+						<div class="item-row-title visible-xs">
+							<div class="row my-flex-row">
+								<div class="col-xs-2 my-padding">
+									<p class="text-center">ITEM</p>
+								</div>
+								<div class="col-xs-3 my-padding">
+									
+								</div>
+								<div class="col-xs-2 my-padding">
+									<p class="text-center">QUANTITY</p>
+								</div>
+								<div class="col-xs-2 my-padding">
+									<p class="text-center">PRICE</p>
+								</div>
+								<div class="col-xs-2 my-padding">
+									<p class="text-center">TOTAL</p>
+								</div>
+								<div class="col-xs-1 my-padding">
+									
+								</div>
+							</div>
+						</div>	
+						<div class="item-row visible-xs">
+							<div class="row my-flex-row">
+								<div class="col-xs-2 my-padding">
+									<img class="full-width" src="assets/img/small-banner-1.jpg" alt="">
+								</div>
+								<div class="col-xs-3 my-padding">
+									<p class="details">Lorem Ipsum dolor sit product name lorem ipsum </p>
+								</div>
+								<div class="col-xs-2 my-padding">
+									<div class="my-flex">
+										<div><p>Qty:</p></div>
+										<div><form action="#"><input type="text"></form></div>
+									</div>
+								</div>
+								<div class="col-xs-2 my-padding">
+									<p class="price">$87.95</p>
+								</div>
+								<div class="col-xs-2 my-padding">
+									<p class="price">$87.95</p>
+								</div>
+								<div class="col-xs-1 my-padding">
+									<a href="#" class="close">×</a>
+								</div>
+							</div>
+						</div>
+						<div class="item-row visible-xs">
+							<div class="row my-flex-row">
+								<div class="col-xs-2 my-padding">
+									<img class="full-width" src="assets/img/small-banner-1.jpg" alt="">
+								</div>
+								<div class="col-xs-3 my-padding">
+									<p class="details">Lorem Ipsum dolor sit product name lorem ipsum </p>
+								</div>
+								<div class="col-xs-2 my-padding">
+									<div class="my-flex">
+										<div><p>Qty:</p></div>
+										<div><form action="#"><input type="text"></form></div>
+									</div>
+								</div>
+								<div class="col-xs-2 my-padding">
+									<p class="price">$87.95</p>
+								</div>
+								<div class="col-xs-2 my-padding">
+									<p class="price">$87.95</p>
+								</div>
+								<div class="col-xs-1 my-padding">
+									<a href="#" class="close">×</a>
+								</div>
+							</div>
+						</div>
+						<div class="item-row-subtotal visible-xs">
+							<div class="row">
+								<div class="col-xs-12 text-right">
+									<div class="my-flex total">
+										<div><p>subtotal:</p></div>
+										<div><p class="total-price">$175.95</p></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-row-buttons visible-xs">
+							<div class="row">
+								<div class="col-xs-4 my-padding"><a href="#" class="btn btn-primary grey">CONTINUE SHOPPING</a></div>
+								<div class="col-xs-4 my-padding"><a href="#" class="btn btn-primary dark-grey">UPDATE CART</a></div>
+								<div class="col-xs-4 my-padding"><a href="#" class="btn btn-primary white-blue">CHECK OUT</a></div>
+							</div>
+						</div>	
 					</div>
 				</div>
 			</div>
@@ -151,7 +371,7 @@
 	</div>
 	
 	<section class="footer">
-		<div class="footer-lvl-1">
+		<div class="footer-lvl-1 hidden-xs">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-right">
@@ -179,7 +399,7 @@
 							<div>
 								<p class="text-uppercase copy">&copy; 2015 COPYRIGHT TRIMTOTHETRADE.cOM</p>
 							</div>
-							<div>
+							<div class="hidden-xs">
 								<ul class="nav-social">
 									<li><a href="#" class="icon fb"><img src="assets/img/social-f.png" alt=""></a></li>
 									<li><a href="#" class="icon tw"><img src="assets/img/social-i.png" alt=""></a></li>
